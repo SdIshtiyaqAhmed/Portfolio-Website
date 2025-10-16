@@ -1061,7 +1061,7 @@
         });
     </script>
     <div id="full-screen-div" onclick="this.style.display='none'; document.getElementById('image-full-screen-close-button').style.display = 'none'; document.getElementById('image-full-screen').style.display = 'none';"></div>
-    <img src="" id="image-full-screen">
+    <img alt="Enlarge image to full screen" src="" id="image-full-screen">
     <h1 id="image-full-screen-close-button" onclick="document.getElementById('full-screen-div').style.display='none'; document.getElementById('image-full-screen').style.display='none'; this.style.display = 'none';">x</h1>
     <script>
         function imageFullscreen(imageImgURL){
@@ -1074,7 +1074,7 @@
         }
     </script>
     <div id="nav-div">
-        <div id="nav-logo"><img src="my-logo/new-logo.png" height="50px" width="50px"></div>
+        <div id="nav-logo"><img alt="logo image" src="my-logo/new-logo.png" height="50px" width="50px"></div>
         <ul id="nav-items">
             <li class="nav-item" onclick="scrollToDivNav('intro')">Home</li>
             <li class="nav-item" onclick="scrollToDivNav('about-subheading')">About</li>
@@ -1086,15 +1086,15 @@
         </ul>
     </div>
     <div id="menu-div">
-        <div id="menu-logo"><img src="dp.png" height="50px" width="50px"></div>
+        <div id="menu-logo"><img alt="dp image" src="dp.png" height="50px" width="50px"></div>
         <ul id="menu-items">
-            <li class="menu-item" onclick="scrollToDivMenu('intro')"><img class="menu-icon-img" src="menu-icons/home.png"><p class="menu-item-name">Home</p></li>
-            <li class="menu-item" onclick="scrollToDivMenu('about')"><img class="menu-icon-img" src="menu-icons/about.png"><p class="menu-item-name">About</p></li>
-            <li class="menu-item" onclick="scrollToDivMenu('education')"><img class="menu-icon-img" src="menu-icons/education.png"><p class="menu-item-name">Education</p></li>
-            <li class="menu-item" onclick="scrollToDivMenu('skills')"><img class="menu-icon-img" src="menu-icons/skills.png"><p class="menu-item-name">Skills</p></li>
-            <li class="menu-item" onclick="scrollToDivMenu('projects')"><img class="menu-icon-img" src="menu-icons/projects.png"><p class="menu-item-name">Projects</p></li>
-            <li class="menu-item" onclick="scrollToDivMenu('certifications')"><img class="menu-icon-img" src="menu-icons/certifications.png"><p class="menu-item-name">Certifications</p></li>
-            <li class="menu-item" onclick="scrollToDivMenu('contact')"><img class="menu-icon-img" src="menu-icons/contact.png"><p class="menu-item-name">Contact</p></li>
+            <li class="menu-item" onclick="scrollToDivMenu('intro')"><img alt="home" class="menu-icon-img" src="menu-icons/home.png"><p class="menu-item-name">Home</p></li>
+            <li class="menu-item" onclick="scrollToDivMenu('about')"><img alt="about" class="menu-icon-img" src="menu-icons/about.png"><p class="menu-item-name">About</p></li>
+            <li class="menu-item" onclick="scrollToDivMenu('education')"><img alt="education" class="menu-icon-img" src="menu-icons/education.png"><p class="menu-item-name">Education</p></li>
+            <li class="menu-item" onclick="scrollToDivMenu('skills')"><img alt="skills" class="menu-icon-img" src="menu-icons/skills.png"><p class="menu-item-name">Skills</p></li>
+            <li class="menu-item" onclick="scrollToDivMenu('projects')"><img alt="projects" class="menu-icon-img" src="menu-icons/projects.png"><p class="menu-item-name">Projects</p></li>
+            <li class="menu-item" onclick="scrollToDivMenu('certifications')"><img alt="certifications" class="menu-icon-img" src="menu-icons/certifications.png"><p class="menu-item-name">Certifications</p></li>
+            <li class="menu-item" onclick="scrollToDivMenu('contact')"><img alt="contact" class="menu-icon-img" src="menu-icons/contact.png"><p class="menu-item-name">Contact</p></li>
         </ul>
     </div>
 
@@ -1114,7 +1114,7 @@
         <h2>"aspiring" </h2><h2 id="aspiring-roles">Software Engineering</h2>
     </div>
     <div id="tools">
-        <div id="toggle-theme" onclick="toggleTheme()"><img id="toggle-icon-img" src="menu-icons/dark-mode-icon.png" height="50px"></div>
+        <div id="toggle-theme" onclick="toggleTheme()"><img alt="toggle-theme" id="toggle-icon-img" src="menu-icons/dark-mode-icon.png" height="50px"></div>
         <div id="download-resume-div" onclick="location.href='SyedIshtiyaqAhmed_Resume.pdf';">
         <p id="resume-download-text">Download Resume</p>
         </div>
@@ -1620,7 +1620,7 @@
                     <li>Implemented OTP verification and CAPTCHA, cutting bot sign-ups by 80%</li>
                     <li>Designed a retailer dashboard, enabling 300+ product listings with 50% faster updates</li>
                </ul>
-               <img class="project-img" src="projects/project-1.png" onclick="imageFullscreen(this.getAttribute('src'))">
+               <img alt="project-1 image" class="project-img" src="projects/project-1.png" onclick="imageFullscreen(this.getAttribute('src'))">
                <div class="project-links-div">
                <a onclick="window.open('https:\/\/github.com/SdIshtiyaqAhmed/Local-E-commerce-Smart-Store-LESS')" class="project-links">Source Code</a>
                <a onclick="window.open('https:\/\/less.ct.ws/home.php')" class="project-links">Website</a>
@@ -1637,7 +1637,7 @@
                     <li>Enabled multi-currency comparison for quick exchange rate analysis</li>
                     <li>Optimized for most devices, improving accessibility and usability</li>
                </ul>
-               <img class="project-img" src="projects/project-2.png" onclick="imageFullscreen(this.getAttribute('src'))">
+               <img alt="project-2 image" class="project-img" src="projects/project-2.png" onclick="imageFullscreen(this.getAttribute('src'))">
                <div class="project-links-div">
                <a onclick="window.open('https:\/\/github.com/SdIshtiyaqAhmed/CurrencyConverter')" class="project-links">Source Code</a>
                <a onclick="window.open('https:\/\/sdishtiyaqahmed.github.io/CurrencyConverter/')" class="project-links">Website</a>
@@ -1654,7 +1654,7 @@
                     <li>Simple and clean user interface with a built-in walkthrough for easy onboarding</li>
                     <li>Optimized for mobile and desktop devices, for smooth performance and usability across screen sizes</li>
                </ul>
-               <img class="project-img" src="projects/project-3.png" onclick="imageFullscreen(this.getAttribute('src'))">
+               <img alt="project-3 image" class="project-img" src="projects/project-3.png" onclick="imageFullscreen(this.getAttribute('src'))">
                <div class="project-links-div">
                <a onclick="window.open('https:\/\/github.com/SdIshtiyaqAhmed/MatrixMaths')" class="project-links">Source Code</a>
                <a onclick="window.open('https:\/\/sdishtiyaqahmed.github.io/MatrixMaths/')" class="project-links">Website</a>
@@ -1671,7 +1671,7 @@
                     <li>Integrated local LLM (SmolLM2-360M-Instruct) for privacy-focused, fully offline operation</li>
                     <li>Processed student data securely with Pandas and local JSON storage and created interactive web UI</li>
                </ul>
-               <img class="project-img" src="projects/project-4.png" onclick="imageFullscreen(this.getAttribute('src'))">
+               <img alt="project-4 image" class="project-img" src="projects/project-4.png" onclick="imageFullscreen(this.getAttribute('src'))">
                <div class="project-links-div">
                <a onclick="window.open('https:\/\/github.com/SdIshtiyaqAhmed/Offline-AI-Academic-Counsellor')" class="project-links">Source Code</a>
                </div>
@@ -1693,7 +1693,7 @@
                         <li>Studied control structures, functions, and data structures in Python</li>
                         <li>Gained hands-on experience with Python coding concepts</li>
                     </ul>
-                    <img src="/certificates/certificate1-1.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
+                    <img alt="certificate1-1 image" src="/certificates/certificate1-1.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
                     </center>
                 </div>
                 <div class="certification">
@@ -1705,8 +1705,8 @@
                         <li>Explored automation, AI, and intent-based networking applications</li>
                         <li>Studied IoT security challenges and protection strategies</li>
                     </ul>
-                    <img src="certificates/badge1-1.png" class="badge-img" onclick="window.open('https:\/\/www.credly.com/badges/365a34e9-869d-4657-8f49-6543f59f1357/public_url');">
-                    <img src="certificates/certificate1-2.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
+                    <img alt="" src="certificates/badge1-1.png" class="badge-img" onclick="window.open('https:\/\/www.credly.com/badges/365a34e9-869d-4657-8f49-6543f59f1357/public_url');">
+                    <img alt="certificate1-2 image" src="certificates/certificate1-2.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
                     </center>
                 </div>
                 <div class="certification">
@@ -1714,7 +1714,7 @@
                     <h5 class="course-title">Python Programming Essenstials - Coursera</h5>
                     <h5 class="course-duration">APR, 2025</h5>
                     <ul class="course-description"></ul>
-                    <img src="certificates/certificate1-3.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
+                    <img alt="certificate1-3 image" src="certificates/certificate1-3.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
                     </center>
                 </div>
                 <div class="certification">
@@ -1722,7 +1722,7 @@
                     <h5 class="course-title">Linux: Introduction to Shell Scripting for DevOps - Coursera Project Network</h5>
                     <h5 class="course-duration">APR, 2025</h5>
                     <ul class="course-description"></ul>
-                    <img src="certificates/certificate1-4.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
+                    <img alt="certificate1-4 image" src="certificates/certificate1-4.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
                     </center>
                 </div>
             </center>
@@ -1739,7 +1739,7 @@
                         <li>Learned hosting, domain configuration, and server management</li>
                         <li>Built and hosted a fully functional web application</li>
                     </ul>
-                    <img src="certificates/certificate2-1.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
+                    <img alt="certificate2-1 image" src="certificates/certificate2-1.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
                     </center>
                 </div>
                 <div class="certification">
@@ -1751,7 +1751,7 @@
                         <li>Topics included Python, HTML, CSS, JavaScript, Bootstrap, Django, MySQL, Version Control, and jQuery</li>
                         <li>Gained theoretical understanding of full stack development workflow and tools</li>
                     </ul>
-                    <img src="certificates/certificate2-2.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
+                    <img alt="certificate2-2 image" src="certificates/certificate2-2.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
                     </center>
                 </div>
             </center>
@@ -1768,7 +1768,7 @@
                         <li>Helped identify and report security threats such as phishing</li>
                         <li>Analyzed and identified which areas of the business needed more robust security training</li>
                     </ul>
-                    <img src="certificates/certificate3-1.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
+                    <img alt="certificate3-1 image" src="certificates/certificate3-1.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
                     </center>
                 </div>
                 <div class="certification">
@@ -1780,7 +1780,7 @@
                         <li>Created a data dashboard using Tableau</li>
                         <li>Used Excel to classify data and draw business conclusions</li>
                     </ul>
-                    <img src="certificates/certificate3-2.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
+                    <img alt="certificate3-2 image" src="certificates/certificate3-2.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
                     </center>
                 </div>
                 <div class="certification">
@@ -1788,7 +1788,7 @@
                     <h5 class="course-title">Accenture Software Engineering Job Simulation on Forage</h5>
                     <h5 class="course-duration">FEB, 2025</h5>
                     <ul class="course-description"></ul>
-                    <img src="certificates/certificate3-3.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
+                    <img alt="certificate3-3 image" src="certificates/certificate3-3.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
                     </center>
                 </div>
 
@@ -1805,7 +1805,7 @@
                         <li>Covered strings, collections, iteration, and scalar types</li>
                         <li>Applied modularity, object-oriented concepts, and classes in Python</li>
                     </ul>
-                    <img src="certificates/certificate4-1.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
+                    <img alt="certificate4-1 image" src="certificates/certificate4-1.jpeg" class="certificate-img" onclick="imageFullscreen(this.getAttribute('src'))">
                 </center>
                 </div>
             </center>
@@ -1815,9 +1815,9 @@
     <div id="contact">
         <h3 class="sub-heading" id="contact-subheading">Contact</h3>
         <div id="contact-list">
-            <div class="contact-item" onclick="window.open('mailto:syedishtiyaqahmed5@gmail.com')"><img src="logos/logo-gmail.png" class="contact-logo-img" id="contact-gmail-img"><h5>Gmail: <br> syedishtiyaqahmed5@gmail.com</h5></div>
-            <div class="contact-item" onclick="window.open('https:\/\/www.github.com/SdIshtiyaqAhmed')"><img src="logos/github-mark.png" class="contact-logo-img" id="contact-github-img"><h5>GitHub: <br> SdIshtiyaqAhmed</h5></div>
-            <div class="contact-item" onclick="window.open('https:\/\/www.linkedin.com/in/syedishtiyaqahmed')"><img src="logos/InBug-Black.png" class="contact-logo-img" id="contact-linkedin-img"><h5>LinkedIn: <br> syedishtiyaqahmed</h5></div>
+            <div class="contact-item" onclick="window.open('mailto:syedishtiyaqahmed5@gmail.com')"><img alt="gmail" src="logos/logo-gmail.png" class="contact-logo-img" id="contact-gmail-img"><h5>Gmail: <br> syedishtiyaqahmed5@gmail.com</h5></div>
+            <div class="contact-item" onclick="window.open('https:\/\/www.github.com/SdIshtiyaqAhmed')"><img alt="github" src="logos/github-mark.png" class="contact-logo-img" id="contact-github-img"><h5>GitHub: <br> SdIshtiyaqAhmed</h5></div>
+            <div class="contact-item" onclick="window.open('https:\/\/www.linkedin.com/in/syedishtiyaqahmed')"><img alt="linkedin" src="logos/InBug-Black.png" class="contact-logo-img" id="contact-linkedin-img"><h5>LinkedIn: <br> syedishtiyaqahmed</h5></div>
         </div>
     </div>
     <div id="footer">
