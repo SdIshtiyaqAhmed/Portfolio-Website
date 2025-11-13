@@ -697,7 +697,7 @@ var CertificationsByType = {
                 CertificationIssuers.forEach(certificationIssuer => {
                     tempCertificates += "<div class=\"certification-div\" onclick=\"viewCertificates('issuer','"+ certificationIssuer +"')\"> <div class=\"certificate-title-div\"> <img alt=\""+ certificationIssuer +"\" class=\"certification-issuer-logos\" src=\"logos/Certification-issuers-logos-light-mode/"+ certificationIssuer +"_logo_light.webp\"> <p class=\"certification-count\"> <b>"+ CertificationsByIssuer[certificationIssuer].length +"</b> Certification"+ (CertificationsByIssuer[certificationIssuer].length == 1 ? "" : "s") +"</p> </div> <div class=\"certificates-images-display\" id=\""+ certificationIssuer +"-certificates\"> </div></div>";
                 });
-                document.querySelector("#certificate-display-issuer").innerHTML = tempCertificates;
+                document.querySelector("#certificate-display-issuer").innerHTML = "<h5>Note: The icons are property of the respective entity/company/organization.</h5> " + tempCertificates;
 
                 var tempCertificates = "";
                 CertificationSkills.forEach(certificationSkill => {
@@ -852,5 +852,6 @@ var CertificationsByType = {
 </body>
 
 </html>
+
 
 
