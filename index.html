@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio of Syed Ishtiyaq Ahmed: projects, skills, certifications, and contact details.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="my-logo/new-logo.webp" type="image/x-icon">
+    <title>Portfolio</title>
+    <style>ul{list-style-type:none}body{font-family:Arial,Helvetica,sans-serif;background-color:var(--body-bg-color);max-width:100%;zoom:90%}#full-screen-div{display:none;position:fixed;top:0;left:0;height:100%;width:100%;z-index:997;background-color:rgba(0,0,0,.8)}#image-full-screen-close-button{display:none;position:fixed;top:0;right:15px;color:#fff;border:1px solid #fff;background-color:#dd1010;box-shadow:3px 3px 15px #000;border-radius:5px;padding:5px 10px;font-size:30px;font-family:'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;z-index:999;font-weight:100}#image-full-screen-close-button:hover{cursor:pointer}#image-full-screen{display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);max-height:80%;max-width:80%;z-index:998}@keyframes fullScreenImage{0%{scale:0;opacity:0}100%{scale:1;opacity:1}}#nav-div{padding:15px;display:flex;justify-content:space-between;position:fixed;width:95%;top:60px;left:50%;transform:translate(-50%,-50%);border-radius:8px;background-image:var(--nav-linear-gradient);box-shadow:0 0 30px rgba(7,9,31,.141);border:3px solid var(--border-color);color:var(--nav-text-color);z-index:99;backdrop-filter:blur(15px)}#nav-items{display:flex;justify-content:space-between;margin-bottom:0;flex-wrap:wrap}.nav-item:hover{cursor:pointer;border-bottom:3px solid var(--accent-text-color);filter:drop-shadow(1px 1px 3px var(--body-bg-color));animation:underline-black 1s}@keyframes underline-black{0%{filter:drop-shadow(0 0 0 var(--body-t-color));border-bottom:0 solid rgba(0,0,0,.5)}100%{}}@keyframes underline-white{0%{border-bottom:0 solid rgba(255,255,255,.5)}100%{border-bottom:3px solid rgba(255,255,255,.5)}}.nav-item{font-size:21px;font-weight:700;display:inline;margin:0 15px;border-bottom:3px solid transparent}#nav-logo{padding:5px;background-color:#f0f8ff;border:1px solid #000;border-radius:5px;margin-left:15px}#menu-div,#menu-items{display:none}#intro{margin-top:150px;font-size:x-large;font-family:Verdana,Geneva,Tahoma,sans-serif;padding:50px;text-align:center;color:var(--accent-bg-color)}#intro h2{display:inline;color:var(--intro-h2-color);font-size:30px;}#about,#certifications,#contact,#education,#projects,#skills{margin:30px}@keyframes left-fade{0%{background-color:var(--body-bg-color);transform:translateX(30%);opacity:.8;scale:.3}30%{transform:translateX(15%);opacity:1;scale:.99}100%{transform:translateX(0);opacity:1;scale:1}}@keyframes card-hover{0%{box-shadow:3px 3px 30px rgba(8,29,50,.104);scale:1}100%{box-shadow:3px 3px 30px rgba(8,29,50,.259);scale:1.03}}#about p,#education div,#skills div,.project{animation:expanding;animation-timeline:view()}@keyframes expanding{0%{scale:0}30%{scale:1}100%{transform:translateY(0%)}}.sub-heading{margin-left:35px;margin-top:80px;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;font-size:30px;color:var(--accent-bg-color);background-image:linear-gradient(270deg,rgba(255,255,255,0),var(--accent-text-color));padding:3px 15px;width:fit-content;border:3px solid var(--accent-bg-color);border-width:0 0 0 8px}#about p{background-color:var(--card-bg-color);border-radius:15px;border:var(--card-border);padding:35px;margin:15px;font-size:20px;text-align:justify;line-height:30px}@keyframes fade-in{0%{opacity:.8;scale:.3}30%{opacity:1;scale:.99}100%{opacity:1;scale:1}}#educationList{display:inline-flex;flex-wrap:wrap;justify-content:center;width:100%}.education-details{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background-color:var(--card-bg-color);border:var(--card-border);padding:15px 30px;margin:15px;border-radius:15px;width:550px;max-width:fit-content;text-align:left}.education-type{font-size:20px;font-weight:700;color:var(--education-type-color);display:inline-flex;margin:15px 0 0 5px}.education-duration{color:var(--education-duration-color);display:inline-flex;font-weight:700}.education-header{display:inline-flex;justify-content:space-between;width:100%;align-items:baseline}.education-specialization{font-size:var(--heading-text-size);margin:5px;color:var(--education-specialization-color)}.education-institute{font-size:var(--heading-text-size);font-weight:500;padding:5px;color:var(--education-institute-color);margin:0}.education-grade-div{display:inline-flex;justify-content:right;width:100%}.education-grade{font-size:medium;padding:5px;margin:15px 5px;color:#090950;background-color:rgba(225,233,246,.7);width:fit-content;border-radius:5px;font-weight:700}.education-percentage{font-size:medium;padding:5px;margin:15px 5px;color:#13137f;background-color:rgba(200,220,255,.7);width:fit-content;border-radius:5px;font-weight:700}#skills{display:inline-flex;justify-content:center;margin:0}#skills div{background-color:var(--card-bg-color);border:var(--card-border);padding:15px;margin:15px;display:inline-flex;border-radius:15px;max-width:fit-content}#skills div h4{width:100%;height:100%;align-self:baseline;max-width:fit-content;font-size:20px;border-right:1px solid var(--border-color);padding-right:15px;color:var(--accent-bg-color)}#skills div ul{margin:5px;padding:8px;display:inline-flex;justify-content:center;flex-wrap:wrap;align-self:baseline;width:100%}#skills div ul li{width:max-content;border:1px solid var(--border-color);color:var(--accent-bg-color);padding:5px;margin:5px;border-radius:5px;font-size:20px}#projectsList{display:inline-flex;flex-wrap:wrap;justify-content:space-evenly}.project{background-color:var(--card-bg-color);border:var(--card-border);border-radius:15px;padding:35px;height:fit-content;max-width:38%;margin:15px}.project-header{display:flex;justify-content:space-between}.project-title{color:var(--accent-bg-color);align-self:baseline;font-weight:bolder;font-size:20px;margin:15px 5px}.project-duration{color:var(--education-duration-color);align-self:baseline;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;font-size:15px;margin:19px 5px}.project-description{font-size:18px;line-height:25px;text-align:justify;padding:5px;margin:15px}.project-img{object-fit:contain;height:auto;width:100%;border:1px solid var(--border-color);border-radius:10px}.project-img:hover{cursor:pointer}.project-links-div{display:flex;justify-content:right;padding:8px;margin:0}.project-links{text-decoration:none;color:var(--accent-bg-color);font-size:18px;font-weight:bold;margin:25px 15px 0 15px;padding:8px;border-radius:5px;border:1px solid var(--accent-bg-color)}.project-links:hover{color:#fff;background-color:#081460;cursor:pointer}.certification-issuer-logos{width:100px;height:100px;border:3px solid var(--accent-text-color);border-radius:15px;margin:5px}#certificate-display-issuer,#certificate-display-skill,#certificate-display-type{display:inline-flex;align-items:center;flex-wrap:wrap;justify-content:center}#certifications{max-width:95%}.certificate-title-div{display:inline-flex;justify-content:center;width:100%}.certificate-title{font-size:large;align-self:center;padding:0;margin:0}.certification-div{justify-items:center;border-radius:15px;padding:15px;margin:15px;background-color:var(--card-bg-color);border:3px solid var(--border-color);animation:move-in 1s}.certification-div:hover{background-color:var(--card-hover-bg-color);box-shadow:0 0 5px var(--border-color);cursor:pointer}#certificates-display{display:inline-flex;flex-wrap:wrap;justify-content:center;width:75%}.certificate-title{padding:15px}.certificates-images-display{justify-content:space-evenly;display:inline-flex;width:100%}@keyframes expand-div{0%{opacity:0;scale:0;width:0}80%{}100%{opacity:1;scale:1}}#certificates-images-displayed-div{display:inline-flex;flex-wrap:wrap;justify-content:space-evenly;width:100%;margin:15px}.certificate-image{margin:5px 3px;border:1px solid black;animation:expand-div 1s}@keyframes move-in{0%{scale:0;opacity:0}100%{scale:1;opacity:1}}.certification-count b{width:100%;font-size:30px}.certification-count{align-content:space-around;font-size:medium;font-weight:bold;padding:5px;color:var(--body-text-color)}#certification-filter-buttons{display:inline-flex;justify-content:center;width:100%;margin-bottom:30px}.certification-filter-button{background-color:var(--body-bg-color);color:var(--accent-bg-color);border-color:var(--accent-bg-color);font-size:18px;padding:5px;margin:15px;font-weight:bold;border:0}.certification-filter-button:hover{cursor:pointer}#contact-list{width:100%;margin-top:30px;display:inline-flex;flex-wrap:wrap;justify-content:center;font-size:25px}.contact-item{background-color:var(--card-bg-color);box-shadow:0 0 3px rgba(57,71,126,.8);padding:5px;margin:15px;border-radius:15px;display:inline-flex;border:var(--card-border)}.contact-item:hover{cursor:pointer;background-color:var(--card-hover-bg-color)}.contact-item h4{font-size:100%;padding:5px;margin:5px}.contact-logo-img{height:50px;margin:0;align-self:center;padding:0 15px 0 0}#toggle-theme{position:fixed;bottom:35px;right:35px;background-color:rgba(25,25,85,.5);padding:5px;border-radius:50%;height:50px;width:50px;z-index:99}#toggle-theme:hover{cursor:pointer}#download-resume-div{display:inline-flex;position:fixed;bottom:35px;right:115px;background-color:var(--accent-text-color);font-size:large;font-weight:bold;padding:15px;border-radius:15px;z-index:99;border:var(--card-border)}#download-resume-div:hover{cursor:pointer;border:3px solid var(--accent-bg-color)}#resume-download-text{font-size:var(--heading-text-size);font-weight:700;margin:5px}#footer{margin-bottom:180px;text-align:center}@media screen and (max-width:900px){#intro{padding:15px}#nav-div{padding:15px;width:90%;top:auto;bottom:-30px;display:inline-flex;justify-content:space-evenly}#menu-div,#nav-logo,#menu-logo{display:none}.nav-item{font-size:large;margin:0 5px}#nav-items{margin:5px 0;padding:0;justify-content:space-evenly;width:100%}#intro{margin-top:5px;font-size:var(--heading-text-size)}#intro h2{font-size:18px}.sub-heading{font-size:23px}#about,#certifications,#contact,#education,#projects,#skills{font-size:medium;font-size:100%;padding:15px 5px;margin:15px 5px}#skills h3{margin-bottom:18px}#about p,#contact div,#education ul,#projects .project{font-size:90%;padding:15px}.education-details{margin:15px;padding:15px 30px}.education-type{font-size:medium;margin:15px 0 0 5px}.education-duration{font-size:13px}.education-header{margin:0;padding:0}.education-specialization{font-size:medium;margin:5px}.education-institute{font-size:medium;padding:5px;margin:0}.education-grade{font-size:medium;padding:5px;margin:15px 5px}.education-percentage{font-size:medium;padding:5px;margin:15px 5px}#skills{padding-bottom:30px}#skills div{padding:15px}#skills div h4{width:100%}#skills div ul{margin:5px;padding:5px}#skills div ul li{padding:5px;margin:5px;font-size:medium}.non-technical-skill,.technical-skill{margin:15px;padding:15px}.non-technical-skill h4,.technical-skill h4{margin:0;margin-bottom:15px}.non-technical-skill ul,.technical-skill ul{margin:0}.project{margin:30px 15px 15px;max-width:550px}.project-title{font-size:medium;margin:15px 5px}.project-duration{margin:19px 5px}.project-description{font-size:15px}.project ul li{font-size:14px;margin-bottom:8px;padding-right:30px}.project-img{height:150px}.certificate-image{width:95%}#contact-list{width:100%;margin-top:30px;font-size:20px}.contact-item{padding:5px;margin:15px}#toggle-theme{bottom:120px}#download-resume-div{bottom:120px}}@media screen and (max-width:580px){body{padding:5px}#nav-div{display:none}#menu-div{padding:15px;position:fixed;display:inline-flex;justify-content:space-between;width:85%;bottom:-15px;left:50%;transform:translate(-50%,-50%);border:1px solid var(--border-color);border-radius:5px;background-image:var(--nav-linear-gradient);box-shadow:3px 3px 30px rgba(0,0,1,.323);color:var(--accent-text-color);z-index:100;backdrop-filter:blur(18px)}#menu-items-toggle{padding:18px;border:var(--card-border);background-color:var(--card-hover-bg-color);color:var(--accent-bg-color);border-radius:5px}#menu-items-background{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:#00000000;z-index:101}#menu-items{display:none;padding:15px;border-radius:15px;position:fixed;background-color:var(--accent-text-color);color:var(--accent-bg-color);bottom:90px;right:30px;z-index:101;border:var(--card-border);animation:slide-up .5s}@keyframes slide-up{0%{transform:translateY(5px);opacity:0}100%{}}.menu-item{margin:15px;font-weight:bold;border:1px solid var(--border-color);border-width:0 0 1px 0;padding-bottom:15px;text-align:center}.menu-item:last-child{border-width:0}.menu-item:hover{cursor:pointer;animation:none}#menu-logo{display:initial;padding:5px;background-color:#f0f8ff;border:1px solid #000;border-radius:5px;margin:5px}#menu-logo-img{height:30px;width:30px}#intro{text-align:center;margin-top:5px;font-size:medium;padding:0 15px}#intro h2{font-size:15px}#about p{font-size:13px}.sub-heading{font-size:20px}#about,#certifications,#contact,#education,#projects,#skills{font-size:small;font-size:100%;padding:15px 5px;margin:15px 5px}#skills h3{margin-bottom:18px}.education-details{font-size:medium;margin:15px;padding:5px 15px}.education-type{font-size:small;margin:15px 0 0 5px}.education-duration{font-size:13px}.education-header{margin:0;padding:0}.education-specialization{font-size:small;margin:5px}.education-institute{font-size:small;padding:5px;margin:0}.education-grade{font-size:small;padding:5px;margin:15px 5px}.education-percentage{font-size:small;padding:5px;margin:15px 5px}#skills{padding-bottom:30px}#skills div{padding:15px;display:block}#skills div h4{width:100%;font-size:medium;border:0}#skills div ul{margin:5px;padding:5px}#skills div ul li{padding:5px;margin:5px;font-size:small}.project{margin:30px 15px 15px;max-width:550px}.project-title{text-align:left;font-size:medium;margin:15px 5px}.project-duration{font-size:12px;margin:19px 5px}.project-description{font-size:12px}.project ul li{font-size:12px;margin-bottom:8px;padding-right:15px}.project-img{height:150px}.project-links{font-size:small}.certificate-image{width:95%}.certification-div{width:100%;margin:15px}.certification-issuer-logos{width:70px;height:70px}.certificate-title-div{width:100%;justify-content:space-around}.certification-count b{font-size:15px}.certification-count{font-size:small}#certification-filter-buttons{display:inline-flex;flex-wrap:wrap}.certification-filter-button{font-size:13px}#contact-list{width:100%;margin-top:30px}.contact-item{padding:5px;margin:15px}.contact-item h5{font-size:14px}#toggle-theme{bottom:150px;right:18px}#download-resume-div{justify-self:center;bottom:150px;position:initial;width:fit-content;height:fit-content;margin:18px 25px;padding:3px;border-radius:5px}#download-resume-div p{font-size:small}}@media screen and (max-width:320px){body{padding:0;min-width:fit-content}}@keyframes bg-shapes{0%{opacity:0;scale:0}50%{opacity:1;scale:1;background-color:rgba(179,183,224,.5);border-radius:15px;transform:rotate(720deg)}100%{opacity:0;scale:0}}</style>
+    <style id="webkit-css">
+        ::-webkit-scrollbar{
+            width: 3px;
+            background-color: aliceblue;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: rgba(0, 0, 0);
+        }
+    </style>
+    <div id="theme">
+
+    </div>
+</head>
+<style>
+    #body-bg-vectors1, #body-bg-vectors2, #body-bg-vectors3{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        background-color: rgba(255, 255, 255, 0);
+        z-index: -1;   
+        animation: bg-vectors-rotate 15s infinite cubic-bezier(1,1,1,1);
+    }
+
+    @keyframes bg-vectors-rotate {
+        0%{
+            transform: rotateZ(0deg);
+        }
+        50%{
+            transform: rotateZ(180deg);
+        }
+        100%{
+            transform: rotateZ(360deg);
+        }
+
+    }
+
+    .vector1, .vector2, .vector3{
+        position: fixed;
+        height: 15px;
+        width: 15px;
+        background-color: #252fed19;
+        border-radius: 0px 0px 0px 50px;
+        top: 0px;
+        left: -1000px;
+        z-index: 1;
+        scale: 0.1;
+    }
+
+    .vector2{
+        background-color: #0b0b4d13;
+    }
+    .vector3{
+        background-color: #13137f19;
+    }
+</style>
+<body>
+    <div id="bg-vectors-styles1"></div>
+    <div id="bg-vectors-styles2"></div>
+    <div id="bg-vectors-styles3"></div>
+    <div id="body-bg-vectors1">
+    </div>
+    <div id="body-bg-vectors2">
+    </div>
+    <div id="body-bg-vectors3">
+    </div>
+<script>
+    let temp1 = "";
+    let temp2 = "";
+    let temp3 = "";
+    
+    for(let i=0; i<10; i++){
+        temp1 += "<div class=\"vector1\"></div>";
+        temp2 += "<div class=\"vector2\"></div>";
+        temp3 += "<div class=\"vector3\"></div>"
+    }
+    
+    document.getElementById("body-bg-vectors1").innerHTML = temp1;
+    document.getElementById("body-bg-vectors2").innerHTML = temp2;
+    document.getElementById("body-bg-vectors3").innerHTML = temp3;
+
+    const vectors1 = document.getElementsByClassName("vector1");
+    const vectors2 = document.getElementsByClassName("vector2");
+    const vectors3 = document.getElementsByClassName("vector3");
+
+    document.getElementById("bg-vectors-styles1").innerHTML = "";
+    document.getElementById("bg-vectors-styles2").innerHTML = "";
+    document.getElementById("bg-vectors-styles3").innerHTML = "";
+    
+    temp1 = "<style>";
+    temp2 = "<style>";
+    temp3 = "<style>";
+    
+    for(let i=0; i<vectors1.length; i++){
+        vectors1[i].style.top = Math.round(Math.random(1000) * 1000,0) % 100+ "%";
+        vectors1[i].style.left = Math.round(Math.random(1000) * 1000,0) % 100 + "%";
+        vectors1[i].style.scale = ((Math.round(Math.random(1000),0)) % 2) + 1;
+        vectors1[i].style.borderRadius = Math.round(Math.random(1000),0) * 10+"px "+ Math.round(Math.random(1000),0) * 10+"px "+ Math.round(Math.random(1000),0) * 10+"px "+ Math.round(Math.random(1000),0) * 10+"px";
+        vectors1[i].style.animation = "move"+i+"-vector1 15s infinite";
+        temp1 += "@keyframes move"+i+"-vector1{0%{}50%{transform: translate(1000px,1000px); opacity: 0px} 100%{}}";
+
+        vectors2[i].style.top = Math.round(Math.random(1000) * 1000,0) % 100+ "%";
+        vectors2[i].style.left = Math.round(Math.random(1000) * 1000,0) % 100 + "%";
+        vectors2[i].style.scale = ((Math.round(Math.random(1000),0)) % 2) + 1;
+        vectors2[i].style.borderRadius = Math.round(Math.random(1000),0) * 10+"px "+ Math.round(Math.random(1000),0) * 10+"px "+ Math.round(Math.random(1000),0) * 10+"px "+ Math.round(Math.random(1000),0) * 10+"px";
+        vectors2[i].style.animation = "move"+i+"-vector2 30s infinite";
+        temp2 += "@keyframes move"+i+"-vector2{0%{}50%{transform: translate(1000px,-1000px); opacity: 0px} 100%{}}";
+
+        vectors3[i].style.top = Math.round(Math.random(1000) * 1000,0) % 100+ "%";
+        vectors3[i].style.left = Math.round(Math.random(1000) * 1000,0) % 100 + "%";
+        vectors3[i].style.scale = ((Math.round(Math.random(1000),0)) % 2) + 1;
+        vectors3[i].style.borderRadius = Math.round(Math.random(1000),0) * 10+"px "+ Math.round(Math.random(1000),0) * 10+"px "+ Math.round(Math.random(1000),0) * 10+"px "+ Math.round(Math.random(1000),0) * 10+"px";
+        vectors3[i].style.animation = "move"+i+"-vector3 45s infinite";
+        temp3 += "@keyframes move"+i+"-vector3{0%{}50%{transform: translate(-1000px,1000px); opacity: 0px} 100%{}}";
+    }
+    
+    temp1 += "</style>";
+    document.getElementById("bg-vectors-styles1").innerHTML = temp1;
+    
+    temp2 += "</style>";
+    document.getElementById("bg-vectors-styles2").innerHTML = temp2;
+    
+    temp3 += "</style>";
+    document.getElementById("bg-vectors-styles3").innerHTML = temp3;
+        
+</script>
+    <div id="full-screen-div" onclick="this.style.display='none'; document.getElementById('image-full-screen-close-button').style.display = 'none'; document.getElementById('image-full-screen').style.display = 'none';"></div>
+    <img alt="Enlarge image to full screen" src="" id="image-full-screen">
+    <h1 id="image-full-screen-close-button" onclick="document.getElementById('full-screen-div').style.display='none'; document.getElementById('image-full-screen').style.display='none'; this.style.display = 'none';">x</h1>
+    <script>
+        function imageFullscreen(imageImgURL){
+            var imageFullscreen = document.getElementById("image-full-screen");
+            document.getElementById("image-full-screen-close-button").style.display = "initial";
+            document.getElementById("full-screen-div").style.display = "initial";
+            imageFullscreen.style.display = "initial";
+            imageFullscreen.style.animation = "fullScreenImage 0.5s";
+            imageFullscreen.setAttribute("src",imageImgURL);
+        }
+    </script>
+    <div id="nav-div">
+        <div id="nav-logo"><img alt="logo image" src="my-logo/new-logo.webp" height="50px" width="50px"></div>
+        <ul id="nav-items">
+            <li class="nav-item" onclick="scrollToDivNav('intro')">Home</li>
+            <li class="nav-item" onclick="scrollToDivNav('about-subheading')">About</li>
+            <li class="nav-item" onclick="scrollToDivNav('education-subheading')">Education</li>
+            <li class="nav-item" onclick="scrollToDivNav('skills-subheading')">Skills</li>
+            <li class="nav-item" onclick="scrollToDivNav('projects-subheading')">Projects</li>
+            <li class="nav-item" onclick="scrollToDivNav('certifications-subheading')">Certifications</li>
+            <li class="nav-item" onclick="scrollToDivNav('contact-subheading',100)">Contact</li>
+        </ul>
+    </div>
+    <div id="menu-items-background" onclick="toggleMenu()"></div>
+    <div id="menu-div">
+        <div id="menu-logo"><img id="menu-logo-img" alt="dp image" src="my-logo/new-logo.webp" height="50px" width="50px"></div>
+        <div id="menu-items-toggle" onclick="toggleMenu()">=</div>
+    </div>
+    <ul id="menu-items">
+        <li class="menu-item" onclick="scrollToDivNav('intro')">Home</li>
+        <li class="menu-item" onclick="scrollToDivNav('about-subheading')">About</li>
+        <li class="menu-item" onclick="scrollToDivNav('education-subheading')">Education</li>
+        <li class="menu-item" onclick="scrollToDivNav('skills-subheading')">Skills</li>
+        <li class="menu-item" onclick="scrollToDivNav('projects-subheading')">Projects</li>
+        <li class="menu-item" onclick="scrollToDivNav('certifications-subheading')">Certifications</li>
+        <li class="menu-item" onclick="scrollToDivNav('contact-subheading',100)">Contact</li>
+        </ul>
+
+    <script>
+        var menu = 0;
+
+        function toggleMenu(){
+            if(menu == 0){
+                document.getElementById("menu-items").style.display = "initial";
+                document.getElementById("menu-items-background").style.display = "initial";
+                menu += 1;
+            }
+            else{
+                document.getElementById("menu-items").style.display = "none";
+                document.getElementById("menu-items-background").style.display = "none";
+                menu -= 1;
+            }
+        }
+
+        function scrollToDivNav(sectionID, offset= -120){
+            var sectionDiv = document.getElementById(sectionID);
+            var topSectionDivLength = Math.round(sectionDiv.getBoundingClientRect().top,0)+offset;
+            window.scrollBy({top: topSectionDivLength, behavior: "smooth"});
+        }
+        function scrollToDivMenu(sectionID){
+            var sectionDiv = document.getElementById(sectionID);
+            sectionDiv.scrollIntoView({behavior: "smooth"});
+        }
+    </script>
+    <div id="intro">
+        <h1>Syed Ishtiyaq Ahmed</h1>
+        <h2>"aspiring" </h2><h2 id="aspiring-roles">Software Engineering</h2>
+    </div>
+    <div id="tools">
+        <div id="toggle-theme" onclick="toggleTheme()"><img alt="toggle-theme" id="toggle-icon-img" src="menu-icons/dark-mode-icon.webp" height="50px"></div>
+        <div id="download-resume-div" onclick="location.href='SyedIshtiyaqAhmed_Resume.pdf';">
+        <img id="download-resume-img" alt="download-resume" src="menu-icons/resume-download-icon.webp">
+        <p id="resume-download-text">Download Resume</p>
+        </div>
+    </div>
+
+     <h3 class="sub-heading" id="about-subheading">About</h3>
+    <div id="about">
+                <p>
+                I have a strong foundation in technical skills and am constantly
+                working on expanding my knowledge in the field of software engineering, and my creativity allows me
+                to approach a problem in unique ways and find innovative solutions, my goal is to continue developing my skills
+                and contribute to the industry through my work, I am eager to take on new challenges and learn from the expereinced
+                professionals in the field. 
+                </p>
+    </div>
+
+ <h3 class="sub-heading" id="education-subheading">Education</h3>
+    <div id="education">
+        <div id="educationList">
+            <div class="education-details">
+                <div class="education-header">
+                <h4 class="education-type">Bachelor of Technology (B.Tech)</h4>
+                <h5 class="education-duration">2021-2025</h5>
+                </div>
+                <h5 class="education-specialization">Computer Science Engineering (CSE)</h5>
+                <p class="education-institute">Balaji Institute of Technology and Science, Warangal</p>
+                <div class="education-grade-div">
+                <p class="education-grade">Current CGPA: 8.29</p>
+                <p class="education-percentage">82.9%</p>
+                </div>
+            </div>
+            <div class="education-details">
+                <div class="education-header">
+                <h4 class="education-type">Intermediate (12th)</h4>
+                <h5 class="education-duration">2019-2021</h5>
+                </div>
+                <h5 class="education-specialization">Physics, Chemistry, Maths (PCM)</h5>
+                <p class="education-institute">S.R. Nava Vignana Bharathi Jr College, Warangal</p>
+                <div class="education-grade-div">
+                <p class="education-grade">Marks: 932</p>
+                <p class="education-percentage">93.2%</p>
+                </div>
+            </div>
+            <div class="education-details">
+                <div class="education-header">
+                <h4 class="education-type">Secondary Education (10th)</h4>
+                <h5 class="education-duration">2019</h5>
+                </div>
+                <h5 class="education-specialization"></h5>
+                <p class="education-institute">S.R. National High School, Warangal</p>
+                <div class="education-grade-div">
+                <p class="education-grade">CGPA: 9.3</p>
+                <p class="education-percentage">93%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 class="sub-heading" id="skills-subheading">Skills</h3>
+    <div id="skills">
+        <center>
+            <div>
+            <h4>Programming Languages</h4>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C Programming</li>
+            </ul>
+            </div>
+            <div>
+            <h4>Web Technologies</h4>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+            </ul>
+            </div>
+            <div>
+            <h4>Data Analytics</h4>
+            <ul>
+                <li>PowerBI</li>
+                <li>Tableu</li>
+                <li>R Programming</li>
+            </ul>
+            </div>
+            <div>
+            <h4>Productivity Tools</h4>
+            <ul>
+                <li>MS Office (Word, Excel, PowerPoint)</li>
+                <li>VS Code</li>
+                <li>Git / GitHub</li>
+            </ul>
+            </div>
+            <div>
+            <h4>Soft Skills</h4>
+                <ul>
+                    <li>Eager to learn</li>
+                    <li>Creativity</li>
+                    <li>Team Work</li>
+                    <li>Problem-solving skills</li>
+                    <li>Critical Thinking</li>
+                </ul>
+            </div>
+        </center>
+    </div>
+    <div id="projects">
+        <h3 class="sub-heading" id="projects-subheading">Projects</h3>
+        <div id="projectsList">
+        <div class="project">
+            <div class="project-header">
+            <h4 class="project-title">LESS - Local E-Commerce Smart Store</h4>
+            <h5 class="project-duration" style="text-align: right;">SEP - DEC, 2024</h5>
+            </div>
+               <p class="project-description">
+                    Built and optimized a local e-commerce website, reducing manual order processing time by 40%.
+                    Developed with HTML, CSS, JavaScript, and PHP, improving page load speed and responsiveness.
+                    Implemented OTP verification and CAPTCHA, cutting bot sign-ups by 80%.
+                    Designed a retailer dashboard, enabling 300+ product listings with 50% faster updates.
+               </p>
+               <img alt="project-1" class="project-img" src="projects/project-1.webp" onclick="imageFullscreen(this.getAttribute('src'))">
+               <div class="project-links-div">
+               <a href="https://github.com/SdIshtiyaqAhmed/Local-E-commerce-Smart-Store-LESS" target="_blank" class="project-links">Source Code</a>
+               <a href="https://less.ct.ws/home.php" target="_blank" class="project-links">Website</a>
+               </div>
+        </div>
+        <div class="project">
+            <div class="project-header">
+            <h4 class="project-title">Currency Converter</h4> 
+            <h5 class="project-duration">FEB, 2025 </h5>
+            </div>
+               <p class="project-description">
+                    Developed a single-file currency converter for 100+ currencies with real-time rates.
+                    Built with HTML, CSS, and JavaScript, ensuring a fast and responsive user interface.
+                    Enabled multi-currency comparison for quick exchange rate analysis.
+                    Optimized for most devices, improving accessibility and usability.
+               </p>
+               <img alt="project-2" class="project-img" src="projects/project-2.webp" onclick="imageFullscreen(this.getAttribute('src'))">
+               <div class="project-links-div">
+               <a href="https://github.com/SdIshtiyaqAhmed/CurrencyConverter" target="_blank" class="project-links">Source Code</a>
+               <a href="https://sdishtiyaqahmed.github.io/CurrencyConverter/" target="_blank" class="project-links">Website</a>
+               </div>
+        </div>
+        <div class="project">
+            <div class="project-header">
+            <h4 class="project-title">Matrix Maths Website</h4> 
+            <h5 class="project-duration">FEB, 2025</h5>
+            </div>
+               <p class="project-description">
+                    Built a light-weight webpage for performing basic matrix operations.
+                    Developed with HTML, CSS, and JavaScript for a fast, responsive, and cross-platform access.
+                    Simple and clean user interface with a built-in walkthrough for easy onboarding.
+                    Optimized for mobile and desktop devices, for smooth performance and usability across screen sizes.
+               </p>
+               <img alt="project-3" class="project-img" src="projects/project-3.webp" onclick="imageFullscreen(this.getAttribute('src'))">
+               <div class="project-links-div">
+               <a href="https://github.com/SdIshtiyaqAhmed/MatrixMaths" target="_blank" class="project-links">Source Code</a>
+               <a href="https://sdishtiyaqahmed.github.io/MatrixMaths/" target="_blank" class="project-links">Website</a>
+               </div>
+        </div>
+        <div class="project">
+            <div class="project-header">
+            <h4 class="project-title">Offline AI Academic Counsellor</h4> 
+            <h5 class="project-duration">APR - JUN, 2025</h5>
+            </div>
+               <p class="project-description">
+                    Developed a Flask-based offline AI academic support system using Python and Transformers.
+                    Built personalized academic counseling features using quiz-based assessments and AI chat interface.
+                    Integrated local LLM (SmolLM2-360M-Instruct) for privacy-focused, fully offline operation.
+                    Processed student data securely with Pandas and local JSON storage and created interactive web UI.
+               </p>
+               <img alt="project-4" class="project-img" src="projects/project-4.webp" onclick="imageFullscreen(this.getAttribute('src'))">
+               <div class="project-links-div">
+               <a href="https://github.com/SdIshtiyaqAhmed/Offline-AI-Academic-Counsellor" target="_blank" class="project-links">Source Code</a>
+               </div>
+        </div>
+        </div>
+    </div>
+    <div id="certifications">
+        <h3 class="sub-heading" id="certifications-subheading">Certifications</h3>
+
+        <div id="certification-filter-buttons">
+            <input id="certification-filter-issuer-button" class="certification-filter-button" type="button" class="certification-filter" onclick="certificationFill('issuer')" value="View by Issuers">
+            <input id="certification-filter-skill-button" class="certification-filter-button" type="button" class="certification-filter" onclick="certificationFill('skill')" value="View by Skills">
+            <input id="certification-filter-type-button" class="certification-filter-button" type="button" class="certification-filter" onclick="certificationFill('type')" value="View by Type">
+        </div>
+        <div id="certificate-display-div">
+            <div id="certificate-display-issuer"></div>
+            <div id="certificate-display-skill"></div>
+            <div id="certificate-display-type"></div>
+            
+            <div id="certificates-display"></div>
+            <script>
+                var CertificationsByIssuer = {
+
+        CiscoNetworkingAcademy: [
+            "Certificate of Course Completion - Introduction to Internet of Things - Cisco Networking Academy - Credly"
+
+        ],
+
+        Coursera: [
+            "Course Certificate - Introduction to Git and GitHub - Google - Coursera",
+            "Course Certificate - Introduction to Responsible AI - Google Cloud  - Coursera",
+            "Course Certificate - Python Programming Essenstials - Rice University - Coursera",
+            "Project Certificate - AI-Powered Development with Codepal; Write & Test To-Do App - Coursera",
+            "Project Certificate - Gen AI for developers Web development with Python & Copilot - Coursera",
+            "Project Certificate - Gen AI for Software Development Code Generation for Python - Coursera",
+            "Project Certificate - Github Copilot with Python; Creating Text Games - Coursera",
+            "Project Certificate - Linux; Introduction to Shell Scripting for DevOps - Coursera",
+            "Project Certificate - PHP Development with ChatGPT; Practical Web Development - Coursera",
+            "Project Certificate - Python Development with ChatGPT Fullstack App Development - Coursera",
+            "Project Certificate - Software Development with ChatGPT; Generating Code with AI - Coursera",
+            "Project Certificate - Using JavaScript With AI; Enhancing Development Workflows - Coursera"
+
+        ],
+
+        EduSkills: [
+            "Certificate of Virtual Internship - AI-ML Virtual Internship - Google for Developers - EduSkills",
+            "Certificate of Virtual Internship - Android Developer Virtual Internship - Google for Developers - India Edu Program - EduSkills",
+            "Certificate of Virtual Internship - Python Full Stack Developer Virtual Internship - EduSkills",
+            "Certificate of Virtual Internship - Zero Trust Cloud Security Virtual Internship - Zscaler - EduSkills"
+
+        ],
+
+        Forage: [
+            "Certificate of Completion - Cybersecurity Job Simulation - Mastercard - Forage",
+            "Certificate of Completion - Data Analytics Job Simulation - Deloitte - Forage",
+            "Certificate of Completion - Excell Skills for Business Job Simulation - Goldman Sachs - Forage",
+            "Certificate of Completion - Software Engineering Job Simulation - Accenture - Udemy"
+
+        ],
+
+        FreeCodeCamp: [
+            "Developer Certification - Scientific Computing with Python - FreeCodeCamp"
+
+        ],
+
+        FutureLearn: [
+            "Certificate of Achievement - Digital Skills; Artificial Intelligence - Accenture - Future Learn"
+
+        ],
+
+        HackerRank: [
+            "Certificate of Accomplishment - Python (Basic) - HackerRank"
+
+        ],
+
+        IBMSkillsBuild: [
+            "Badge - AI Literacy Badge - IBM SkillsBuild"
+
+        ],
+
+        InfosysSpringBoard: [
+            "Course Completion Certificate -  Programming Fundamentals using Python - Part 1 - Infosys Springboard",
+            "Course Completion Certificate -  Python Concurrent Programming; Multiprocessing in Python - Infosys Springboard",
+            "Course Completion Certificate - Basics of Python - Infosys Springboard",
+            "Course Completion Certificate - Beginning of Python - Infosys Springboard",
+            "Course Completion Certificate - ChatGPT for Programmers; Build Python Apps in Seconds - Infosys Springboard",
+            "Course Completion Certificate - GitHub Copilot for developers - Infosys Springboard",
+            "Course Completion Certificate - Introduction to Java - Infosys Springboard",
+            "Course Completion Certificate - Learning CSS - Infosys Springboard",
+            "Course Completion Certificate - Learning Python - Infosys Springboard",
+            "Course Completion Certificate - Linux Installation - Infosys Springboard",
+            "Course Completion Certificate - Mastering Python - Infosys Springboard",
+            "Course Completion Certificate - Problem Solving for Success - Infosys Springboard",
+            "Course Completion Certificate - Prompt Engineering - Infosys Springboard",
+            "Course Completion Certificate - Python By Example - Infosys Springboard",
+            "Course Completion Certificate - Python Clean Coding - Infosys Springboard",
+            "Course Completion Certificate - Python Concurrent Programming; Multithreading in Python - Infosys Springboard",
+            "Course Completion Certificate - Python Fundamentals - Infosys Springboard"
+
+        ],
+
+        Kaggle: [
+            "Badge - Python Coder - Kaggle"
+
+        ],
+
+        OracleUniversity: [
+            "Certificate of Recognition - Oracle Cloud Infrastructure 2025 - AI Fundamentals - Oracle University"
+
+        ],
+
+        SkillIndiaDigitalHub: [
+            "Certificate of Completion - AI for All - Intel - Skill India Digital Hub"
+
+        ],
+
+        Udemy: [
+            "Certificate of Completion - Build Generative AI Apps and Solutions with No-Code Tools - Udemy",
+            "Certificate of Completion - ChatGPT for Programmers; Build Python Apps in Seconds - Udemy",
+            "Certificate of Completion - GenAI for Professionals; 10x Your Productivity - Udemy",
+            "Certificate of Completion - Master Generative AI & Generative AI tools (ChatGPT & more) - Udemy"
+
+        ],
+
+}
+
+var CertificationsBySkill = {
+        AndroidDevelopment:[
+            "Certificate of Virtual Internship - Android Developer Virtual Internship - Google for Developers - India Edu Program - EduSkills"
+        ],
+        ArtificialIntelligence:[
+            "Badge - AI Literacy Badge - IBM SkillsBuild",
+            "Certificate of Achievement - Digital Skills; Artificial Intelligence - Accenture - Future Learn",
+            "Certificate of Completion - AI for All - Intel - Skill India Digital Hub",
+            "Certificate of Completion - Build Generative AI Apps and Solutions with No-Code Tools - Udemy",
+            "Certificate of Completion - GenAI for Professionals; 10x Your Productivity - Udemy",
+            "Certificate of Completion - Master Generative AI & Generative AI tools (ChatGPT & more) - Udemy",
+            "Certificate of Recognition - Oracle Cloud Infrastructure 2025 - AI Fundamentals - Oracle University",
+            "Certificate of Virtual Internship - AI-ML Virtual Internship - Google for Developers - EduSkills",
+            "Course Certificate - Introduction to Responsible AI - Google Cloud  - Coursera",
+            "Course Completion Certificate - Prompt Engineering - Infosys Springboard",
+            "Project Certificate - AI-Powered Development with Codepal; Write & Test To-Do App - Coursera",
+            "Project Certificate - Gen AI for developers Web development with Python & Copilot - Coursera",
+            "Project Certificate - Gen AI for Software Development Code Generation for Python - Coursera",
+            "Project Certificate - Software Development with ChatGPT; Generating Code with AI - Coursera",
+            "Project Certificate - Using JavaScript With AI; Enhancing Development Workflows - Coursera"
+        ],
+
+        CloudComputing:[
+            "Certificate of Virtual Internship - Zero Trust Cloud Security Virtual Internship - Zscaler - EduSkills"
+        ],
+
+        Cybersecurity:[
+            "Certificate of Completion - Cybersecurity Job Simulation - Mastercard - Forage"
+        ],
+
+        DataAnalytics:[
+            "Certificate of Completion - Data Analytics Job Simulation - Deloitte - Forage"
+        ],
+
+        InternetOfThings:[
+            "Certificate of Course Completion - Introduction to Internet of Things - Cisco Networking Academy - Credly"
+        ],
+
+        MicrosoftOffice:[
+            "Certificate of Completion - Excell Skills for Business Job Simulation - Goldman Sachs - Forage"
+        ],
+
+        ProblemSolving:[
+            "Course Completion Certificate - Problem Solving for Success - Infosys Springboard"
+        ],
+
+        ProgrammingOrScripting:[
+            "Badge - Python Coder - Kaggle",
+            "Certificate of Accomplishment - Python (Basic) - HackerRank",
+            "Certificate of Completion - ChatGPT for Programmers; Build Python Apps in Seconds - Udemy",
+            "Certificate of Virtual Internship - Python Full Stack Developer Virtual Internship - EduSkills",
+            "Course Certificate - Python Programming Essenstials - Rice University - Coursera",
+            "Course Completion Certificate -  Programming Fundamentals using Python - Part 1 - Infosys Springboard",
+            "Course Completion Certificate -  Python Concurrent Programming; Multiprocessing in Python - Infosys Springboard",
+            "Course Completion Certificate - Basics of Python - Infosys Springboard",
+            "Course Completion Certificate - Beginning of Python - Infosys Springboard",
+            "Course Completion Certificate - ChatGPT for Programmers; Build Python Apps in Seconds - Infosys Springboard",
+            "Course Completion Certificate - Introduction to Java - Infosys Springboard",
+            "Course Completion Certificate - Learning Python - Infosys Springboard",
+            "Course Completion Certificate - Linux Installation - Infosys Springboard",
+            "Course Completion Certificate - Mastering Python - Infosys Springboard",
+            "Course Completion Certificate - Python By Example - Infosys Springboard",
+            "Course Completion Certificate - Python Clean Coding - Infosys Springboard",
+            "Course Completion Certificate - Python Concurrent Programming; Multithreading in Python - Infosys Springboard",
+            "Course Completion Certificate - Python Fundamentals - Infosys Springboard",
+            "Developer Certification - Scientific Computing with Python - FreeCodeCamp",
+            "Project Certificate - Github Copilot with Python; Creating Text Games - Coursera",
+            "Project Certificate - Linux; Introduction to Shell Scripting for DevOps - Coursera",
+            "Project Certificate - Python Development with ChatGPT Fullstack App Development - Coursera"
+        ],
+
+        SoftwareEngineering:[
+            "Certificate of Completion - Software Engineering Job Simulation - Accenture - Udemy"
+        ],
+
+        VersionControlSystems:[
+            "Course Certificate - Introduction to Git and GitHub - Google - Courser",
+            "Course Completion Certificate - GitHub Copilot for developers - Infosys Springboard"
+        ],
+
+        WebDevelopment:[
+            "Course Completion Certificate - Learning CSS - Infosys Springboard",
+            "Project Certificate - PHP Development with ChatGPT; Practical Web Development - Coursera"
+        ],
+}
+
+var CertificationsByType = {
+        Badge: [
+            "Badge - AI Literacy Badge - IBM SkillsBuild",
+            "Badge - Python Coder - Kaggle"
+        ],
+
+        CertificateOfAccomplishment: [
+            "Certificate of Accomplishment - Python (Basic) - HackerRank"
+        ],
+
+        CertificateOfAchievement: [
+            "Certificate of Achievement - Digital Skills; Artificial Intelligence - Accenture - Future Learn"
+        ],
+
+        CertificateOfCompletion: [
+            "Certificate of Completion - AI for All - Intel - Skill India Digital Hub",
+            "Certificate of Completion - Build Generative AI Apps and Solutions with No-Code Tools - Udemy",
+            "Certificate of Completion - ChatGPT for Programmers; Build Python Apps in Seconds - Udemy",
+            "Certificate of Completion - Cybersecurity Job Simulation - Mastercard - Forage",
+            "Certificate of Completion - Data Analytics Job Simulation - Deloitte - Forage",
+            "Certificate of Completion - Excell Skills for Business Job Simulation - Goldman Sachs - Forage",
+            "Certificate of Completion - GenAI for Professionals; 10x Your Productivity - Udemy",
+            "Certificate of Completion - Master Generative AI & Generative AI tools (ChatGPT & more) - Udemy",
+            "Certificate of Completion - Software Engineering Job Simulation - Accenture - Udemy"
+        ],
+
+        CertificateOfCourseCompletion: [
+            "Certificate of Course Completion - Introduction to Internet of Things - Cisco Networking Academy - Credly"
+        ],
+
+        CertificateOfRecognition: [
+            "Certificate of Recognition - Oracle Cloud Infrastructure 2025 - AI Fundamentals - Oracle University"
+        ],
+
+        CertificateOfVirtualInternship: [
+            "Certificate of Virtual Internship - AI-ML Virtual Internship - Google for Developers - EduSkills",
+            "Certificate of Virtual Internship - Android Developer Virtual Internship - Google for Developers - India Edu Program - EduSkills",
+            "Certificate of Virtual Internship - Python Full Stack Developer Virtual Internship - EduSkills",
+            "Certificate of Virtual Internship - Zero Trust Cloud Security Virtual Internship - Zscaler - EduSkills"
+        ],
+
+        CourseCertificate: [
+            "Course Certificate - Introduction to Git and GitHub - Google - Coursera",
+            "Course Certificate - Introduction to Responsible AI - Google Cloud  - Coursera",
+            "Course Certificate - Python Programming Essenstials - Rice University - Coursera"
+        ],
+
+        CourseCompletionCertificate: [
+            "Course Completion Certificate -  Programming Fundamentals using Python - Part 1 - Infosys Springboard",
+            "Course Completion Certificate -  Python Concurrent Programming; Multiprocessing in Python - Infosys Springboard",
+            "Course Completion Certificate - Basics of Python - Infosys Springboard",
+            "Course Completion Certificate - Beginning of Python - Infosys Springboard",
+            "Course Completion Certificate - ChatGPT for Programmers; Build Python Apps in Seconds - Infosys Springboard",
+            "Course Completion Certificate - GitHub Copilot for developers - Infosys Springboard",
+            "Course Completion Certificate - Introduction to Java - Infosys Springboard",
+            "Course Completion Certificate - Learning CSS - Infosys Springboard",
+            "Course Completion Certificate - Learning Python - Infosys Springboard",
+            "Course Completion Certificate - Linux Installation - Infosys Springboard",
+            "Course Completion Certificate - Mastering Python - Infosys Springboard",
+            "Course Completion Certificate - Problem Solving for Success - Infosys Springboard",
+            "Course Completion Certificate - Prompt Engineering - Infosys Springboard",
+            "Course Completion Certificate - Python By Example - Infosys Springboard",
+            "Course Completion Certificate - Python Clean Coding - Infosys Springboard",
+            "Course Completion Certificate - Python Concurrent Programming; Multithreading in Python - Infosys Springboard",
+            "Course Completion Certificate - Python Fundamentals - Infosys Springboard"
+        ],
+
+        DeveloperCertification: [
+            "Developer Certification - Scientific Computing with Python - FreeCodeCamp"
+        ],
+
+        ProjectCertificate: [
+            "Project Certificate - AI-Powered Development with Codepal; Write & Test To-Do App - Coursera",
+            "Project Certificate - Gen AI for developers Web development with Python & Copilot - Coursera",
+            "Project Certificate - Gen AI for Software Development Code Generation for Python - Coursera",
+            "Project Certificate - Github Copilot with Python; Creating Text Games - Coursera",
+            "Project Certificate - Linux; Introduction to Shell Scripting for DevOps - Coursera",
+            "Project Certificate - PHP Development with ChatGPT; Practical Web Development - Coursera",
+            "Project Certificate - Python Development with ChatGPT Fullstack App Development - Coursera",
+            "Project Certificate - Software Development with ChatGPT; Generating Code with AI - Coursera",
+            "Project Certificate - Using JavaScript With AI; Enhancing Development Workflows - Coursera"
+        ],
+}
+            </script>
+            <script>
+                function addSpaceIntoString(string){
+                let temp = "";
+                for(let i=0; i<string.length; i++){
+                    if("ABCDEFGHIJKLMNOPQRSTUVWXYZ".includes(string[i])){
+                        temp += " " + string[i]
+                    }
+                    else{
+                        temp += string[i];
+                    }
+                }
+                return temp;
+            }
+
+                var CertificationIssuers = Object.keys(CertificationsByIssuer);
+                var CertificationSkills = Object.keys(CertificationsBySkill);
+                var CertificationTypes = Object.keys(CertificationsByType);
+                
+                var tempCertificates = "";
+                CertificationIssuers.forEach(certificationIssuer => {
+                    tempCertificates += "<div class=\"certification-div\" onclick=\"viewCertificates('issuer','"+ certificationIssuer +"')\"> <div class=\"certificate-title-div\"> <img alt=\""+ certificationIssuer +"\" class=\"certification-issuer-logos\" src=\"logos/Certification-issuers-logos-light-mode/"+ certificationIssuer +"_logo_light.webp\"> <p class=\"certification-count\"> <b>"+ CertificationsByIssuer[certificationIssuer].length +"</b> Certification"+ (CertificationsByIssuer[certificationIssuer].length == 1 ? "" : "s") +"</p> </div> <div class=\"certificates-images-display\" id=\""+ certificationIssuer +"-certificates\"> </div></div>";
+                });
+                document.querySelector("#certificate-display-issuer").innerHTML = tempCertificates;
+
+                var tempCertificates = "";
+                CertificationSkills.forEach(certificationSkill => {
+                    tempCertificates += "<div class=\"certification-div\" onclick=\"viewCertificates('skill','"+ certificationSkill +"')\"> <h5 class=\"certificate-title\"> "+ addSpaceIntoString(certificationSkill) +" </h5> <p class=\"certification-count\"><b>"+ CertificationsBySkill[certificationSkill].length +"</b> Certification"+ (CertificationsBySkill[certificationSkill].length == 1 ? "" : "s") +"</p> <div class=\"certificates-images-display\" id=\""+ certificationSkill +"-certificates\"> </div></div>";
+                });
+                document.querySelector("#certificate-display-skill").innerHTML = tempCertificates;
+
+                var tempCertificates = "";
+                CertificationTypes.forEach(certificationType => {
+                    tempCertificates += "<div class=\"certification-div\" onclick=\"viewCertificates('type','"+ certificationType +"')\"> <h5 class=\"certificate-title\"> "+ addSpaceIntoString(certificationType) +" </h5> <p class=\"certification-count\"> <b>"+ CertificationsByType[certificationType].length +"</b> Certification"+ (CertificationsByType[certificationType].length == 1 ? "" : "s") +"</p> <div class=\"certificates-images-display\" id=\""+ certificationType +"-certificates\"> </div></div>";
+                });
+                document.querySelector("#certificate-display-type").innerHTML = tempCertificates;
+
+                function viewCertificates(filterType,filterName){
+                    switch(filterType){
+                        case "issuer":
+                            var tempCertificate = "<div id=\"certificates-images-displayed-div\">"
+                            CertificationsByIssuer[filterName].forEach(certification => {
+                                tempCertificate += "<img alt=\""+ certification +"\" loading=\"lazy\" class=\"certificate-image\" src=\"certificates/Certificates Images/Syed Ishtiyaq Ahmed - " + certification + ".webp\">";
+                            });
+                            var certificates_images_display = document.getElementsByClassName("certificates-images-display");
+                            for(var i=0; i<certificates_images_display.length; i++){
+                                certificates_images_display[i].innerHTML = "";
+                            }
+                            document.getElementById(filterName+"-certificates").innerHTML = tempCertificate + "</div>";
+                            document.getElementById("certificates-display").style.display = "inline-flex";
+                            document.getElementById(filterName+"-certificates").style.animation = "expand-div 1s";
+                            break;
+                        
+                        case "skill":
+                            var tempCertificate = "<div id=\"certificates-images-displayed-div\">"
+                            CertificationsBySkill[filterName].forEach(certification => {
+                                tempCertificate += "<img alt=\""+ certification +"\" loading=\"lazy\" class=\"certificate-image\" src=\"certificates/Certificates Images/Syed Ishtiyaq Ahmed - " + certification + ".webp\">";
+                            });
+                            var certificates_images_display = document.getElementsByClassName("certificates-images-display");
+                            for(var i=0; i<certificates_images_display.length; i++){
+                                certificates_images_display[i].innerHTML = "";
+                            }
+                            document.getElementById(filterName+"-certificates").innerHTML = tempCertificate + "</div>";
+                            document.getElementById("certificates-display").style.display = "inline-flex";
+                            document.getElementById(filterName+"-certificates").style.animation = "expand-div 1s";
+                            break;
+
+                        case "type":
+                            var tempCertificate = "<div id=\"certificates-images-displayed-div\">"
+                            CertificationsByType[filterName].forEach(certification => {
+                                tempCertificate += "<img alt=\""+ certification +"\" loading=\"lazy\" class=\"certificate-image\" src=\"certificates/Certificates Images/Syed Ishtiyaq Ahmed - " + certification + ".webp\">";
+                            });
+                            var certificates_images_display = document.getElementsByClassName("certificates-images-display");
+                            for(var i=0; i<certificates_images_display.length; i++){
+                                certificates_images_display[i].innerHTML = "";
+                            }
+                            document.getElementById(filterName+"-certificates").innerHTML = tempCertificate + "</div>";
+                            document.getElementById("certificates-display").style.display = "inline-flex";
+                            document.getElementById(filterName+"-certificates").style.animation = "expand-div 1s";
+                            break;
+                    }
+                    document.getElementById(filterName+"-certificates").scrollIntoView({behavior: "smooth"});
+                }
+            </script>
+        </div>
+        <script>
+            certificationFill("issuer");
+
+            function removeSpaceFromString(string){
+                let temp = "";
+                for(let i=0; i<string.length; i++){
+                    if(string[i] == " "){
+                        continue;
+                    }
+                    temp += string[i];
+                }
+                return temp;
+            }
+
+            function certificationFill(filter){
+                switch(filter){
+                    case "issuer":
+                        document.getElementById("certification-filter-issuer-button").style.borderBottom = "3px solid";
+                        document.getElementById("certification-filter-skill-button").style.borderBottom = "0px solid";
+                        document.getElementById("certification-filter-type-button").style.borderBottom = "0px solid";
+                        document.getElementById("certificate-display-issuer").style.display = "inline-flex";
+                        document.getElementById("certificate-display-skill").style.display = "none";
+                        document.getElementById("certificate-display-type").style.display = "none";
+                        break
+                    case "skill":
+                        document.getElementById("certification-filter-issuer-button").style.borderBottom = "0px solid";
+                        document.getElementById("certification-filter-skill-button").style.borderBottom = "3px solid";
+                        document.getElementById("certification-filter-type-button").style.borderBottom = "0px solid";
+                        document.getElementById("certificate-display-issuer").style.display = "none";
+                        document.getElementById("certificate-display-skill").style.display = "inline-flex";
+                        document.getElementById("certificate-display-type").style.display = "none";
+                        break
+                    case "type":
+                        document.getElementById("certification-filter-issuer-button").style.borderBottom = "0px solid";
+                        document.getElementById("certification-filter-skill-button").style.borderBottom = "0px solid";
+                        document.getElementById("certification-filter-type-button").style.borderBottom = "3px solid";
+                        document.getElementById("certificate-display-issuer").style.display = "none";
+                        document.getElementById("certificate-display-skill").style.display = "none";
+                        document.getElementById("certificate-display-type").style.display = "inline-flex";
+                        break
+                }
+            }
+        
+        </script>
+    </div>
+    <div id="contact">
+        <h3 class="sub-heading" id="contact-subheading">Contact</h3>
+        <div id="contact-list">
+            <div class="contact-item" onclick="location.href = 'mailto:syedishtiyaqahmed5@gmail.com';" target="_blank"><img alt="gmail" src="logos/logo-gmail.webp" class="contact-logo-img" id="contact-gmail-img"><h4>Gmail: <br> syedishtiyaqahmed5@gmail.com</h4></div>
+            <div class="contact-item" onclick="window.open('https:\/\/www.github.com/SdIshtiyaqAhmed');" target="_blank"><img alt="github" src="logos/github-mark.webp" class="contact-logo-img" id="contact-github-img"><h4>GitHub: <br> SdIshtiyaqAhmed</h4></div>
+            <div class="contact-item" onclick="window.open('https:\/\/www.linkedin.com/in/syedishtiyaqahmed');" target="_blank"><img alt="linkedin" src="logos/InBug-Black.webp" class="contact-logo-img" id="contact-linkedin-img"><h4>LinkedIn: <br> syedishtiyaqahmed</h4></div>
+        </div>
+    </div>
+    <script>
+        const roles = ["Software Engineer","Web Developer","Full Stack Developer","Data Analyst","AI Enthusiast","Tech Innovator"];
+        var roleIndex = 0;
+            setInterval(() =>{
+                document.getElementById("aspiring-roles").innerText = roles[roleIndex];
+                roleIndex=roleIndex+1;
+                if(roleIndex == roles.length-1){roleIndex=0;}
+            },1000);
+
+        var theme = 1;
+        toggleTheme();
+
+        function toggleTheme(){
+            const invertColorIDs = ["download-resume-img","contact-github-img","contact-linkedin-img"];
+            if(theme == 0){
+                theme = 1;
+                document.getElementById("toggle-icon-img").setAttribute("src", "./menu-icons/light-mode-icon.webp");
+                document.getElementById("theme").innerHTML = "<style> :root{ --body-bg-color: #000a21; --nav-bg-color-1: ; --intro-h2-color: #a0c6ff; --card-border: 3px solid rgba(255, 255, 255, 0.085); --education-type-color: #e6e6fc; --education-duration-color: #d7d7ff; --education-specialization-color: #dae9fff7; --education-institute-color: #ffffff; --accent-bg-color: rgba(220, 227, 255, 0.922); --nav-linear-gradient: linear-gradient(0deg, rgb(0, 21, 126), rgba(35, 48, 100, 0.922)); --accent-text-color: rgb(0, 0, 0); --border-color: rgba(83, 97, 134, 0.3); --heading-text-size: 18px; --sub-heading-text-size: 15px; --content-text-size: 12px; --card-bg-color: rgb(44, 60, 100); --card-hover-bg-color: rgba(50, 68, 115, 0.852); --invert-filter: invert();} body{ color: aliceblue;} </style>";
+                invertColorIDs.forEach(e => {
+                    document.getElementById(e).style.filter = "invert()";
+                });
+            }
+            else{
+                theme = 0;
+                document.getElementById("toggle-icon-img").setAttribute("src", "./menu-icons/dark-mode-icon.webp");
+                document.getElementById("theme").innerHTML = "<style> :root{ --body-bg-color: #f0f2f6; --intro-h2-color: #525e70; --card-border: 3px solid rgba(0, 0, 0, 0.085); --education-type-color: #00007c; --education-duration-color: #0707af; --education-specialization-color: #0044a2f7; --education-institute-color: #050f3d; --accent-bg-color: rgba(0, 20, 79, 0.922); --nav-linear-gradient: linear-gradient(0deg, rgb(0, 21, 126), rgba(0, 20, 79, 0.922)); --nav-text-color: white; --accent-text-color: rgb(233, 237, 255); --border-color: rgba(83, 97, 134, 0.3); --heading-text-size: 18px; --sub-heading-text-size: 15px; --content-text-size: 12px; --card-bg-color: rgb(248, 250, 255); --card-hover-bg-color: rgba(242, 245, 253, 0.852);} </style>";
+                invertColorIDs.forEach(e => {
+                    document.getElementById(e).style.filter = "none";
+                });
+            }
+
+
+        }
+    </script>
+    <div id="footer">
+        <h3>&copy; 2025, Syed Ishtiyaq Ahmed. All rights reserved.</h3>
+    </div>
+</body>
+</html>
